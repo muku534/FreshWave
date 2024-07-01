@@ -65,7 +65,7 @@ const LoginScreen = ({ navigation }) => {
                         </View>
 
                         <View style={styles.buttonContainer}>
-                            <TouchableOpacity style={styles.loginButton}>
+                            <TouchableOpacity style={styles.loginButton} onPress={() => navigation.navigate("AppDrawer")}>
                                 <Text style={styles.loginButtonText}>Login</Text>
                             </TouchableOpacity>
 
@@ -82,7 +82,7 @@ const LoginScreen = ({ navigation }) => {
                         <Text style={styles.text}>or</Text>
                         <View style={styles.line} />
                     </View>
-                    
+
                     <View style={styles.linkContainer}>
                         <Text style={styles.linkText}>Don't have an account? </Text>
                         <TouchableOpacity onPress={() => navigation.navigate('RegisterScreen')} style={styles.linkbutton}>

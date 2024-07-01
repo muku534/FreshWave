@@ -25,8 +25,6 @@ const RegisterScreen = ({ navigation }) => {
                             <Text style={{ paddingVertical: hp(0.5), fontSize: hp(2.2), fontWeight: '300', color: 'black' }}>We're glad you're here. Sign up to get started!</Text>
                         </View>
 
-
-
                         <View>
                             <Text style={styles.label}>Email Address</Text>
                             <View style={styles.inputContainer}>
@@ -55,7 +53,6 @@ const RegisterScreen = ({ navigation }) => {
                                 />
                             </View>
                         </View>
-
 
                         <View>
                             <Text style={styles.label}>Password</Text>

@@ -6,6 +6,8 @@ import { NavigationContainer } from '@react-navigation/native';
 import SplashScreen from './src/screens/Auth/SplashScreen';
 import LoginScreen from './src/screens/Auth/LoginScreen';
 import RegisterScreen from './src/screens/Auth/RegisterScreen';
+import AppDrawer from './src/navigation/AppDrawer/AppDrawer';
+import ProductDetail from './src/screens/Home/ProductDetail';
 
 const Stack = createStackNavigator();
 
@@ -18,6 +20,8 @@ function App() {
           <Stack.Screen name='SplashScreen' component={SplashScreen} options={{ headerShown: false }} />
           <Stack.Screen name='LoginScreen' component={LoginScreen} options={{ headerShown: false }} />
           <Stack.Screen name='RegisterScreen' component={RegisterScreen} options={{ headerShown: false }} />
+          <Stack.Screen name='AppDrawer' component={AppDrawer} options={{ headerShown: false }} />
+          <Stack.Screen name='ProductDetail' component={ProductDetail} options={{ headerShown: false }} />
         </Stack.Navigator>
       </NavigationContainer>
 
